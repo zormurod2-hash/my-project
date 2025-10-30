@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+h1
+h2
+h3
+h4
+h5
+h6 {
+    line-height: 1.2;l
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.theme-controls {
+    position: fixed;
+    top: 20px ;
+    right: 20px;
+    z-index: 10px;
+    display: flex; 
+}
+.theme-controls button {
+    width: 30px;
+    height: 30px;
+    bottom: 1px solid #000;
+    corses: pointer;
+}
+.theme-controls button + button {
+    margin-left: 10px; 
+}
+.dark-mode .theme-controls button {
+    bottom: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+}
+.site-header {
+    padding: 30px;
+    text-align: center;
+}
+.logo {
+    width: 250px;
+    height: 250px;
+    border: 5px solid gold;
+    background-repeat: 50%;
+    vertical-align: middle;
+}
+.site-header-title {
+    margin-bottom: 5px;
+}
+.promo-video {
+    text-align: center;
+}
+.courses-contacts {
+    display: flex;
+}
+.courses,
+.contacts {
+    width: 50%;
+}
+.courses li, 
+.contacts li {
+    margin-bottom: 5px;
+}
+.contacts-list a {
+    display: inline-block;
+    border-bottom: 2px solid gold;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.contacts-list a:hover {
+    background-color: gold;
+}
+.contacts-list a:active {
+    background-color: orange;
+}
+.dark-mode .contacts-list a {
+    color: gold;
+}
+.dark-mode .contacts-list a:hover {
+    color: #222;
+}
